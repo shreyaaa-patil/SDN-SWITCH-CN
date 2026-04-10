@@ -138,5 +138,6 @@ exit
 ```
 Results:
 
+![Flow table s1](images/flowtable_ping1.jpeg)
 
 
