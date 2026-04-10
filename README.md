@@ -154,7 +154,7 @@ When we run iperf, we get the following results:
 
 Flow table observed when we ping the hosts for the first time, before the switch learns the MAC addresses:
 
-![Flow table s1](images/flowtable_ping1.jpeg)
+![Flow table](images/flowtable_ping1.jpeg)
 
 Results observed on Wireshark: (ARP Broadcast and flooding can be observed)
 
@@ -170,7 +170,13 @@ Running iperf command the second time:
 
 ![iperf results](images/iperf_ping2.jpg)
 
+Flow table observed on second ping:
 
+![Flow table](images/flowtable_ping2.jpg)
+
+Wireshark results (ICMP Packets observed):
+
+![](images/ping2_wireshark.png)
 
 
 
