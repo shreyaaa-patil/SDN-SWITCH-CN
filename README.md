@@ -138,6 +138,41 @@ exit
 ```
 Results:
 
+### 1. Running the sdn_switch.py code and ryu controller
+
+![](images/start.jpg)
+
+### 2. Case 1: First ping (Before the switch learns the MAC addresses)
+
+Running the ping command for the first time:
+
+![Ping 1](images/ping1_mininet.jpeg)
+
+When we run iperf, we get the following results:
+
+![iperf results](images/iperf_ping1.jpeg)
+
+Flow table observed when we ping the hosts for the first time, before the switch learns the MAC addresses:
+
 ![Flow table s1](images/flowtable_ping1.jpeg)
+
+Results observed on Wireshark: (ARP Broadcast and flooding can be observed)
+
+![](images/wireshark_ping1.jpeg)
+
+### 3. Case 2: Second ping (After the switch learns the MAC addresses)
+
+Running ping command the second time:
+
+![](images/ping2.jpg)
+
+Running iperf command the second time:
+
+![iperf results](images/iperf_ping2.jpg)
+
+
+
+
+
 
 
